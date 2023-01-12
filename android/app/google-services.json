@@ -1,76 +1,40 @@
 {
   "project_info": {
-    "project_number": "180068155370",
-    "project_id": "fullspeed-demo",
-    "storage_bucket": "fullspeed-demo.appspot.com"
+    "project_number": "950706796121",
+    "project_id": "flavor-fumiya",
+    "storage_bucket": "flavor-fumiya.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:180068155370:android:28c8a78a3be872876efc93",
+        "mobilesdk_app_id": "1:950706796121:android:b4f673750b17c784ede348",
         "android_client_info": {
-          "package_name": "com.example.sample"
+          "package_name": "com.example.fumiya"
         }
       },
       "oauth_client": [
         {
-          "client_id": "180068155370-ibbkaqh06ondtr36c5e9onlfiar6d6k9.apps.googleusercontent.com",
+          "client_id": "950706796121-o73sk9gp4icgivqnkpo4qfc9f8ich8ft.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCxnRl1LE-Nm3YoG_nvTUwW0uymd31HLqs"
+          "current_key": "AIzaSyCb6cdxFDXwng2l4pp-M7T9wTqWfAMr4Bk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "180068155370-ibbkaqh06ondtr36c5e9onlfiar6d6k9.apps.googleusercontent.com",
+              "client_id": "950706796121-o73sk9gp4icgivqnkpo4qfc9f8ich8ft.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "180068155370-8kd31l4esu4fije17ta49nom1j8rtgj7.apps.googleusercontent.com",
+              "client_id": "950706796121-3apecg5qg4vg3c3dmb142p4nvpn32td0.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.sample"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:180068155370:android:39bcac5823ad86e56efc93",
-        "android_client_info": {
-          "package_name": "com.fullspeed.demo"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "180068155370-ibbkaqh06ondtr36c5e9onlfiar6d6k9.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCxnRl1LE-Nm3YoG_nvTUwW0uymd31HLqs"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "180068155370-ibbkaqh06ondtr36c5e9onlfiar6d6k9.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "180068155370-8kd31l4esu4fije17ta49nom1j8rtgj7.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.sample"
+                "bundle_id": "com.example.fumiya"
               }
             }
           ]

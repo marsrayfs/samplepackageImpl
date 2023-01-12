@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCxnRl1LE-Nm3YoG_nvTUwW0uymd31HLqs',
-    appId: '1:180068155370:android:28c8a78a3be872876efc93',
-    messagingSenderId: '180068155370',
-    projectId: 'fullspeed-demo',
-    storageBucket: 'fullspeed-demo.appspot.com',
+    apiKey: 'AIzaSyDvzQAe5O7LCsKYfvPWc0cnTpjXYFtqnt0',
+    appId: '1:111234838473:android:989482d61726631958c218',
+    messagingSenderId: '111234838473',
+    projectId: 'flavor-akaso',
+    storageBucket: 'flavor-akaso.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAhYoJrol6cHsS8jYwJ7jySaSe7Y9vyxFs',
-    appId: '1:180068155370:ios:267146bca191c5476efc93',
-    messagingSenderId: '180068155370',
-    projectId: 'fullspeed-demo',
-    storageBucket: 'fullspeed-demo.appspot.com',
-    iosClientId: '180068155370-8kd31l4esu4fije17ta49nom1j8rtgj7.apps.googleusercontent.com',
-    iosBundleId: 'com.example.sample',
+    apiKey: 'AIzaSyDbRqMtXZq7nfRLG5PM6jn9cEzWeFtpvGY',
+    appId: '1:111234838473:ios:f6f45209d5fef3b858c218',
+    messagingSenderId: '111234838473',
+    projectId: 'flavor-akaso',
+    storageBucket: 'flavor-akaso.appspot.com',
+    iosClientId: '111234838473-q3mr9o3as7tldb3igtqs5a6q8k6h5pim.apps.googleusercontent.com',
+    iosBundleId: 'com.example.akaso',
   );
 }

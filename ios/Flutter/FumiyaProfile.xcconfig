@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_Fumiya.dart
+ASSET_PREFIX=Fumiya
+BUNDLE_NAME=Fumiya
+BUNDLE_DISPLAY_NAME=Fumiya
