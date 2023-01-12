@@ -106,7 +106,6 @@ flavorizr:
 
       android:
         applicationId: "com.example.akaso"
-
       ios:
         bundleId: "com.example.akaso"
 
