@@ -1,7 +1,7 @@
 library standalone_pkg;
 
-import '../../util/result.dart';
-import '../datasource/registration/registration_datasource.dart';
+import 'package:standalone_pkg/data/datasource/registration/registration_datasource.dart';
+import 'package:standalone_pkg/util/result.dart';
 
 abstract class RegisterRepository {
   final RegistrationDataSource dataSource;

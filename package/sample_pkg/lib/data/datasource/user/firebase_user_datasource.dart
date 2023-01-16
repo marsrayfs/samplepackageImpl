@@ -25,8 +25,8 @@ class FirebaseUserDatasource extends UserDataSource {
           .collection('users')
           .doc(uid)
           .withConverter<User>(
-              fromFirestore: User.fromFirestore,
-              toFirestore: (User user, _) => user.toJson());
+          fromFirestore: User.fromFirestore,
+          toFirestore: (User user, _) => user.toJson());
       final docSnap = await ref.get();
       return Success(data: docSnap.data());
     } catch (e) {

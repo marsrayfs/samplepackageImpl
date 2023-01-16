@@ -1,7 +1,7 @@
 library standalone_pkg;
 
-import '../../data/repository/remote_config_repository.dart';
-import '../../util/result.dart';
+import 'package:standalone_pkg/data/repository/remote_config_repository.dart';
+import 'package:standalone_pkg/util/result.dart';
 
 class GetConfigUseCase {
   final RemoteConfigRepository repository;
@@ -9,6 +9,6 @@ class GetConfigUseCase {
   GetConfigUseCase(this.repository);
 
   Future<Result> getConfig() async {
-    return await repository.getConfig();
+    return repository.getConfig();
   }
 }

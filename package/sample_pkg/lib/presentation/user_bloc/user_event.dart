@@ -15,3 +15,5 @@ class SaveUserInfo extends UserEvent {
   @override
   List<Object?> get props => [user];
 }
+
+class FetchUserInfo extends UserEvent {}

@@ -12,11 +12,9 @@ class RegisterState extends Equatable {
   final Result? result;
 
   const RegisterState(this.state, this.result);
-
   factory RegisterState.initial() {
     return const RegisterState(RegisterStateEnum.idle, null);
   }
-
   @override
   List<Object?> get props => [state, result];
 

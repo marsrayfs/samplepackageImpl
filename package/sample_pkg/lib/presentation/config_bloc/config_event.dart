@@ -10,4 +10,3 @@ abstract class ConfigEvent extends Equatable {
 class RequestConfigurationEvent extends ConfigEvent {
   const RequestConfigurationEvent();
 }
-

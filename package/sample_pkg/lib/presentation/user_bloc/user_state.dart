@@ -9,15 +9,24 @@ abstract class UserState extends Equatable {
 
 class UserInitial extends UserState {}
 
-class SaveInfoLoading extends UserState {}
+class UserInfoLoading extends UserState {}
 
 class SaveInfoSuccess extends UserState {}
 
-class SaveInfoException extends UserState {
-  const SaveInfoException(this.message);
+class UserInfoException extends UserState {
+  const UserInfoException(this.message);
 
   final String message;
 
   @override
   List<Object> get props => [message];
+}
+
+class UserInfoLoaded extends UserState {
+  const UserInfoLoaded(this.user);
+
+  final User user;
+
+  @override
+  List<Object> get props => [user];
 }

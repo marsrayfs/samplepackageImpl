@@ -14,6 +14,7 @@ part 'register_state.dart';
 
 class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
   final RegisterUseCase registerUseCase;
+
   final SendEmailVerificationUseCase sendEmailVerificationUseCase;
 
   RegisterBloc(this.registerUseCase, this.sendEmailVerificationUseCase)

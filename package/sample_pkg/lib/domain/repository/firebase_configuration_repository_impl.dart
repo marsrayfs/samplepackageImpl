@@ -1,8 +1,8 @@
 library standalone_pkg;
 
-import '../../data/datasource/remote_config/firebase_remote_config_datasource.dart';
-import '../../data/repository/remote_config_repository.dart';
-import '../../util/result.dart';
+import 'package:standalone_pkg/data/datasource/remote_config/firebase_remote_config_datasource.dart';
+import 'package:standalone_pkg/data/repository/remote_config_repository.dart';
+import 'package:standalone_pkg/util/result.dart';
 
 class FirebaseRemoteConfigRepositoryImpl extends RemoteConfigRepository {
   FirebaseRemoteConfigRepositoryImpl()
@@ -10,6 +10,6 @@ class FirebaseRemoteConfigRepositoryImpl extends RemoteConfigRepository {
 
   @override
   Future<Result> getConfig() async {
-    return await dataSource.getConfig();
+    return dataSource.getConfig();
   }
 }

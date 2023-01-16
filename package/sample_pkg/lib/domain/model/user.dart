@@ -1,7 +1,8 @@
 library standalone_pkg;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:standalone_pkg/data/entity/user/firebase_user.dart';
+
+import '../../data/entity/user/firebase_user.dart';
 
 class User extends FirebaseUser {
   User(

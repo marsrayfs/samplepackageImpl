@@ -1,8 +1,8 @@
 library standalone_pkg;
 
-import '../../data/datasource/registration/firebase_registration_datasource.dart';
-import '../../data/repository/register_repository.dart';
-import '../../util/result.dart';
+import 'package:standalone_pkg/data/datasource/registration/firebase_registration_datasource.dart';
+import 'package:standalone_pkg/data/repository/register_repository.dart';
+import 'package:standalone_pkg/util/result.dart';
 
 class FirebaseRegisterRepositoryImpl extends RegisterRepository {
   FirebaseRegisterRepositoryImpl() : super(FirebaseRegistrationDataSource());

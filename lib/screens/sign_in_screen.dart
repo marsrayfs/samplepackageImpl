@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sample/screens/sign_up_screen.dart';
 import 'package:standalone_pkg/domain/model/user.dart';
 import 'package:standalone_pkg/presentation/sign_in_bloc/sign_in_bloc.dart';
-import 'package:standalone_pkg/presentation/sign_in_bloc/sign_in_bloc.dart';
 import 'package:standalone_pkg/util/result.dart';
 
 import 'dashboard_screen.dart';
@@ -29,8 +28,7 @@ class SignInScreen extends StatelessWidget {
             ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('Signed in successfully!')));
             Navigator.of(context).pushAndRemoveUntil(
-                MaterialPageRoute(
-                    builder: (context) => const DashBoardScreen()),
+                MaterialPageRoute(builder: (context) => DashBoardScreen()),
                 (Route<dynamic> route) => false);
           }
           if (state is EmailNotVerified) {

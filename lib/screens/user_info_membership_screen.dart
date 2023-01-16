@@ -5,6 +5,8 @@ import 'package:standalone_pkg/domain/model/user.dart';
 import 'package:standalone_pkg/presentation/user_bloc/user_bloc.dart';
 import 'package:standalone_pkg/util/string_constant.dart';
 
+import 'dashboard_screen.dart';
+
 class UserInfoMemberShipScreen extends StatelessWidget {
   UserInfoMemberShipScreen({Key? key}) : super(key: key);
 
@@ -14,15 +16,18 @@ class UserInfoMemberShipScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('User Info Membership'),
+          title: const Text('User Info Membership'),
         ),
         body: BlocConsumer<UserBloc, UserState>(
           listener: (context, state) {
             if (state is SaveInfoSuccess) {
               ScaffoldMessenger.of(context)
-                  .showSnackBar(SnackBar(content: Text('success')));
+                  .showSnackBar(const SnackBar(content: Text('success')));
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(builder: (context) => DashBoardScreen()),
+                  (Route<dynamic> route) => false);
             }
-            if (state is SaveInfoException) {
+            if (state is UserInfoException) {
               ScaffoldMessenger.of(context)
                   .showSnackBar(SnackBar(content: Text(state.message)));
             }
@@ -76,36 +81,14 @@ class UserInfoMemberShipScreen extends StatelessWidget {
                                       .read<UserBloc>()
                                       .add(SaveUserInfo(user));
                                 }
-
-                                // context.read<SignInBloc>().add(SignIn(
-                                //     email: emailController.text,
-                                //     password: passwordController.text));
                               },
                               child: const Text("Save Information"),
                             ),
                           ),
-                          // const SizedBox(
-                          //   height: 20,
-                          // ),
-                          // SizedBox(
-                          //     width: double.infinity,
-                          //     child: TextButton(
-                          //         onPressed: () {
-                          //           Navigator.push(
-                          //             context,
-                          //             MaterialPageRoute(
-                          //                 builder: (context) =>
-                          //                 const SignUpScreen()),
-                          //           );
-                          //         },
-                          //         child: const Text(
-                          //           'Sign Up',
-                          //           style: TextStyle(color: Colors.white),
-                          //         )))
                         ],
                       ),
                     ),
-                    if (state is SaveInfoLoading)
+                    if (state is UserInfoLoading)
                       const Center(
                         child: CircularProgressIndicator(),
                       )

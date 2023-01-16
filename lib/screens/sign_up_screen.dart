@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:standalone_pkg/presentation/register_bloc/register_bloc.dart';
-import 'package:standalone_pkg/presentation/register_bloc/register_bloc.dart';
 import 'package:standalone_pkg/util/result.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -39,7 +38,6 @@ class SignUpScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-
                       TextFormField(
                         decoration:
                             const InputDecoration(hintText: 'Email Address'),

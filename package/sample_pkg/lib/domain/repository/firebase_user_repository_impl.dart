@@ -1,10 +1,9 @@
 library standalone_pkg;
 
-import 'package:standalone_pkg/data/datasource/user/firebase_user_datasource.dart';
-import 'package:standalone_pkg/data/repository/user_repository.dart';
-import 'package:standalone_pkg/domain/model/user.dart';
-
+import '../../data/datasource/user/firebase_user_datasource.dart';
+import '../../data/repository/user_repository.dart';
 import '../../util/result.dart';
+import '../model/user.dart';
 
 class FirebaseUserRepositoryImpl extends UserRepository {
   FirebaseUserRepositoryImpl() : super(FirebaseUserDatasource());
@@ -15,7 +14,7 @@ class FirebaseUserRepositoryImpl extends UserRepository {
   }
 
   @override
-  Future<Result> saveUser(User user) async{
+  Future<Result> saveUser(User user) async {
     return await dataSource.saveUser(user);
   }
 }
